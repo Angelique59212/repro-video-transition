@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #06D;
+    /*supporte par les nav*/
+    /*transition property et transition duration*/
+    -webkit-transition: width 2s ease, background-color 5s ease;
+    -moz-transition: width 2s ease, background-color 5s ease;
+    -o-transition: width 2s ease, background-color 5s ease;
+    transition: width 2s ease, background-color 5s ease;
+
+    /*pour delay */
+    -webkit-transition: 3s width 2s, 3s background-color 5s;
+    -moz-transition: 3s width 2s, 3s background-color 5s;
+    -o-transition: 3s width 2s, 3s background-color 5s;
+    transition: 3s width 2s, 3s background-color 5s;
+
+}
+
+ /* changement d'état*/
+div:hover {
+    width: 400px;
+    background-color: #A03;
+}
